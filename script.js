@@ -1,13 +1,26 @@
-// const question = document.querySelector(".question");
-const question = document.getElementsByClassName("question");
-question.addEventListener("click", faq);
+// document.querySelectorAll(".question").forEach((question) =>
+//   question.addEventListener("click", () => {
+//     if (question.parentNode.classList.contains("active")) {
+//       question.parentNode.classList.toggle("active");
+//     } else {
+//       question
+//         .querySelectorAll(".question")
+//         .forEach((question) => question.parentNode.classList.remove("active"));
+//       question.parentNode.classList.add("active");
+//     }
+//   })
+// );
 
-function faq() {
-  console.log("I was clicked.");
-}
-
-const question = document.querySelector("question");
-
-question.addEventListener("click", (event) => {
-  console.log("I was clicked");
-});
+const questions = document.querySelectorAll(".question");
+questions.forEach((question) =>
+  question.addEventListener("click", () => {
+    if (question.parentNode.classList.contains("active")) {
+      question.parentNode.classList.toggle("active");
+    } else {
+      questions.forEach((question) =>
+        question.parentNode.classList.remove("active")
+      );
+      question.parentNode.classList.add("active");
+    }
+  })
+);
