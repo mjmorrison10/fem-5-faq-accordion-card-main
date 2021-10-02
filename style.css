@@ -1,0 +1,71 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  /* #### Text */
+
+  --primaryText-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --primaryText-soft-red: hsl(14, 88%, 65%);
+
+  /* #### Gradient */
+
+  /* Background gradient: */
+
+  --bg-soft-violet: hsl(273, 75%, 66%);
+  --bg-soft-blue: hsl(240, 73%, 65%);
+
+  /* ### Neutral */
+
+  /* #### Text */
+
+  --neutralText-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --neutralText-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* #### Dividers */
+
+  --dividers-light-grayish-blue: hsl(240, 5%, 91%);
+
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.bg-gradient-style {
+  background-image: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+}
+
+.primaryText-soft-red-hover:hover {
+  color: var(--primaryText-soft-red);
+}
+
+.primaryText-soft-red {
+  color: var(--primaryText-soft-red);
+}
+
+.primaryText-very-dark-desaturated-blue {
+  color: var(--primaryText-very-dark-desaturated-blue);
+}
+
+.neutralText-very-dark-grayish-blue {
+  color: var(--neutralText-very-dark-grayish-blue);
+}
+
+.neutralText-dark-grayish-blue {
+  color: var(--neutralText-dark-grayish-blue);
+}
+
+.top-100 {
+  top: 14rem;
+}
+
+.left-100 {
+  left: -7rem;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
+.border-neutralText-dark-grayish-blue {
+  border-color: var(--neutralText-dark-grayish-blue);
+}

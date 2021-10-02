@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center flex-col h-screen bg-gradient-style"
+  >
+    <main class="w-3/5 h-auto flex bg-white">
+      <!-- left section -->
+      <div class="left h-auto flex-1 relative">
+        <img
+          class="absolute top-100 left-100 z-10"
+          src="./images/illustration-box-desktop.svg"
+          alt=""
+        />
+        <img
+          class="absolute -top-20 -left-44"
+          src="./images/bg-pattern-desktop.svg"
+          alt=""
+        />
+        <img
+          class="absolute top-10 -left-24"
+          src="./images/lillustration-woman-online-desktop.svg"
+          alt=""
+        />
+      </div>
+
+      <!-- right section -->
+      <div class="right flex-1 flex flex-col justify-evenly pr-20">
+        <h1
+          class="
+            text-4xl
+            font-bold
+            py-4
+            mt-10
+            neutralText-very-dark-grayish-blue
+          "
+        >
+          FAQ
+        </h1>
+        <!-- question 1 -->
+        <div
+          class="
+            question-container
+            border-b-1 border-neutralText-dark-grayish-blue
+          "
+        >
+          <div class="flex w-full py-6 justify-between">
+            <h1
+              class="
+                question
+                text-xl
+                font-semibold
+                primaryText-soft-red-hover
+                cursor-pointer
+                neutralText-very-dark-grayish-blue
+              "
+            >
+              How many team members can I invite?
+            </h1>
+            <div class="arrow flex">
+              <img
+                class="question h-4 w-auto cursor-pointer transform rotate-180"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- answer 1 -->
+          <p class="answer hidden pb-6 neutralText-dark-grayish-blue">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </div>
+
+        <!-- question 2 -->
+        <div
+          class="
+            question-container
+            border-b-1 border-neutralText-dark-grayish-blue
+          "
+        >
+          <div class="question flex w-full py-6 justify-between">
+            <h1
+              class="
+                question
+                font-semibold
+                text-xl
+                primaryText-soft-red-hover
+                cursor-pointer
+                neutralText-very-dark-grayish-blue
+              "
+            >
+              What is the maximum file upload size?
+            </h1>
+            <div class="arrow transition flex">
+              <img
+                class="h-4 w-auto cursor-pointer"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- answer 2 -->
+          <p class="answer hdden pb-6 neutralText-dark-grayish-blue">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </div>
+
+        <!-- question 3 -->
+        <div
+          class="
+            question-container
+            border-b-1 border-neutralText-dark-grayish-blue
+          "
+        >
+          <div class="question flex w-full py-6 justify-between">
+            <h1
+              class="
+                question
+                font-semibold
+                text-xl
+                primaryText-soft-red-hover
+                cursor-pointer
+                neutralText-very-dark-grayish-blue
+              "
+            >
+              How do I reset my password?
+            </h1>
+            <div class="arrow transition flex">
+              <img
+                class="h-4 w-auto cursor-pointer"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- answer 3 -->
+          <p class="answer hidden pb-6 neutralText-dark-grayish-blue">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+
+        <!-- question 4 -->
+        <div
+          class="
+            question-container
+            border-b-1 border-neutralText-dark-grayish-blue
+          "
+        >
+          <div class="question flex w-full py-6 justify-between">
+            <h1
+              class="
+                question
+                font-semibold
+                text-xl
+                primaryText-soft-red-hover
+                cursor-pointer
+                neutralText-very-dark-grayish-blue
+              "
+            >
+              Can I cancel my subscription?
+            </h1>
+            <div class="arrow transition flex">
+              <img
+                class="h-4 w-auto cursor-pointer"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- answer 4 -->
+          <p class="answer hidden pb-6 neutralText-dark-grayish-blue">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </div>
+
+        <!-- question 5 -->
+        <div
+          class="
+            question-container
+            border-b-1 border-neutralText-dark-grayish-blue
+            mb-20
+          "
+        >
+          <div class="question flex w-full py-6 justify-between">
+            <h1
+              class="
+                question
+                font-semibold
+                text-xl
+                primaryText-soft-red-hover
+                cursor-pointer
+                neutralText-very-dark-grayish-blue
+              "
+            >
+              Do you provide additional support?
+            </h1>
+            <div class="arrow transition flex">
+              <img
+                class="h-4 w-auto cursor-pointer"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- answer 5 -->
+          <p class="answer hidden pb-6 neutralText-dark-grayish-blue">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution bg-white bg-opacity-50 rounded-2xl px-1 mt-1">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/mjmorrison10">mjmorrison10</a>.
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
